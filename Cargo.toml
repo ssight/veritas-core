@@ -1,16 +1,3 @@
-[package]
-name = "veritas-core"
-description = "Core cryptographic library powering Veritas"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-anyhow = "1.0.102"
-bitcode = "0.6.9"
-image = "0.25.10"
-img-parts = "0.4.0"
-rand = "0.8"
-rsa = "0.9.10"
-sha2 = { version = "0.10.9", features = ["oid"] }
-tss-esapi = "7.6.0"
-uuid = { version = "1.22.0", features = ["v4"] }
+[workspace]
+resolver = "2"
+members = ["veritas-core", "bindings", "veritas-service"]
