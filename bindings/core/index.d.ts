@@ -1,5 +1,5 @@
 export interface PkInfo {
-    id: string;
+    key_id: string;
     authority: string;
     device_model: string;
     issued: number;
